@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Madi Labs</h1>
+  <form action="/story">
+    {% for prompt in prompts %}
+      <p>{{ prompt }}:
+        <input name="{{ prompt }}">
+      </p>
+    {% endfor %}
+    <button>Submit</button>
+  </form>
+</body>
+</html>
